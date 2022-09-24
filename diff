@@ -1,0 +1,38 @@
+8
+changi 5 tampines 3 clementi 1 downtown 2 chinatown 4 harbourfront 4 bedok 2 tuas 1 
+0 3 0 0 0 0 0 0 
+3 0 8 6 0 2 0 0 
+0 8 0 0 4 0 0 5 
+0 6 0 0 0 9 0 0 
+0 0 4 0 0 0 10 0 
+0 2 0 9 0 0 0 0 
+0 0 0 0 10 0 0 0 
+0 0 5 0 0 0 0 0 
+tuas clementi tampines changi 
+bedok chinatown clementi tampines harbourfront 
+changi tampines downtown harbourfront 
+20
+2
+2
+2
+20
+0: b4-changi# b5-harbourfront% g0-tuas% g1-changi% y2-bedok% y3-harbourfront% 
+1: b4-changi# b5-harbourfront% g0-tuas% g1-changi% y2-bedok% y3-harbourfront% 
+2: b4-changi# b5-harbourfront% g0-tuas% g1-changi% y2-bedok% y3-harbourfront% 
+3: b4-changi# b5-harbourfront% g0-tuas->clementi g1-changi% y2-bedok% y3-harbourfront% 
+4: b4-changi# b5-harbourfront% g0-tuas->clementi g1-changi% y2-bedok->chinatown y3-harbourfront% 
+5: b4-changi# b5-harbourfront% g0-tuas->clementi g1-changi% y2-bedok->chinatown y3-harbourfront% 
+6: b4-changi# b5-harbourfront->downtown g0-tuas->clementi g1-changi% y2-bedok->chinatown y3-harbourfront->tampines 
+7: b4-changi% b5-harbourfront->downtown g0-tuas->clementi g1-changi->tampines y2-bedok->chinatown y3-harbourfront->tampines 
+8: b4-changi% b5-harbourfront->downtown g0-clementi# g1-changi->tampines y2-bedok->chinatown y3-tampines# 
+9: b4-changi% b5-harbourfront->downtown g0-clementi% g1-changi->tampines y2-bedok->chinatown y3-tampines% 
+10: b4-changi% b5-harbourfront->downtown g0-clementi% g1-tampines# y2-bedok->chinatown y3-tampines% 
+11: b4-changi% b5-harbourfront->downtown g0-clementi% g1-tampines# y2-bedok->chinatown y3-tampines% 
+12: b4-changi% b5-harbourfront->downtown g0-clementi->tampines g1-tampines# y2-bedok->chinatown y3-tampines% 
+13: b4-changi% b5-harbourfront->downtown g0-clementi->tampines g1-tampines# y2-bedok->chinatown y3-tampines% 
+14: b4-changi->tampines b5-harbourfront->downtown g0-clementi->tampines g1-tampines% y2-chinatown# y3-tampines->clementi 
+15: b4-changi->tampines b5-downtown# g0-clementi->tampines g1-tampines% y2-chinatown% y3-tampines->clementi 
+16: b4-changi->tampines b5-downtown% g0-clementi->tampines g1-tampines% y2-chinatown% y3-tampines->clementi 
+17: b4-tampines# b5-downtown% g0-clementi->tampines g1-tampines% y2-chinatown% y3-tampines->clementi 
+18: b4-tampines% b5-downtown% g0-clementi->tampines g1-tampines% y2-chinatown% y3-tampines->clementi 
+19: b4-tampines% b5-downtown% g0-clementi->tampines g1-tampines% y2-chinatown% y3-tampines->clementi 
